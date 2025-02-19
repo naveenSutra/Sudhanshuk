@@ -31,11 +31,17 @@ LabInsight.AI is a powerful document processing platform that enables users to s
 
 ```mermaid
 graph TD;
-    User -->|Login| FirebaseAuth;
-    User -->|Upload Document| PreSignedURL;
+    User -->|Login| LoginPage;
+    LoginPage -->|New User?| SignupPage;
+    SignupPage -->|Back to Login| LoginPage;
+    LoginPage -->|Successful Login| HomePage;
+    HomePage -->|Generate AWS S3 Upload Link| PreSignedURL;
     PreSignedURL -->|S3 Upload| AWS_S3;
-    User -->|Query Document| AI_Model;
-    AI_Model -->|Response| User;
+    HomePage -->|View Previous Uploads| UploadHistory;
+    HomePage -->|Chat with AI| AIChat;
+    HomePage -->|Logout| LoginPage;
+    AIChat -->|Query AI| AI_Model;
+    AI_Model -->|Response| AIChat;
 ```
 
 ## 📜 Installation
