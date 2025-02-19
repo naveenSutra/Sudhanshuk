@@ -17,13 +17,6 @@ LabInsight.AI is a powerful document processing platform that enables users to *
 
 ---
 
-## 🎥 Demo Video
-[![Watch the Demo](https://img.youtube.com/vi/CBM49rZyGTc/0.jpg)](https://www.youtube.com/watch?v=CBM49rZyGTc)
-
-> Click the image above to watch the demo video.
-
----
-
 ## 🏷️ Architecture
 
 ```mermaid
@@ -145,25 +138,11 @@ cd frontend && npm run dev
 - Click on a file to **download or view it**.
 
 ---
+## 🎥 Demo Video
+[![Watch the Demo](https://img.youtube.com/vi/CBM49rZyGTc/0.jpg)](https://www.youtube.com/watch?v=CBM49rZyGTc)
 
-## 🛡️ Security Considerations
-✅ **Pre-signed URLs** ensure users **can upload files securely** without exposing AWS credentials.  
-✅ **Firebase Authentication** prevents **unauthorized access** to documents.  
-✅ **AWS S3 Object Permissions** ensure each user **can only access their own files**.  
-✅ **Cookies & HTTP-Only Tokens** secure user sessions **without exposing JWTs**.  
+> Click the image above to watch the demo video.
 
 ---
 
-## 📃 Future Improvements
-🔗 **AI-powered Optical Character Recognition (OCR)** – Extract text from **scanned images**.  
-🌟 **Multi-file Chat Support** – Compare and analyze **multiple reports** at once.  
-🏥 **Doctor Review System** – Allow **doctors to review** AI-generated insights.  
-🛡️ **HIPAA Compliance** – Implement **end-to-end encryption** for medical data safety.  
-
----
-
-## 📝 License
-This project is **open-source** under the **MIT License**.
-
-🚀 **Happy coding! Let me know if you have any questions! 🔥**
 
