@@ -56,7 +56,8 @@ cd LabInsight.AI
 ### 2️⃣ Install Dependencies
 
 ```sh
-npm install
+cd Frontend && npm install
+cd ../Backend && npm install
 ```
 
 ### 3️⃣ Setup Environment Variables
