@@ -17,6 +17,13 @@ LabInsight.AI is a powerful document processing platform that enables users to *
 
 ---
 
+## 🎥 Demo Video
+[![Watch the Demo](https://img.youtube.com/vi/CBM49rZyGTc/0.jpg)](https://www.youtube.com/watch?v=CBM49rZyGTc)
+
+> Click the image above to watch the demo video.
+
+---
+
 ## 🏷️ Architecture
 
 ```mermaid
@@ -39,10 +46,11 @@ graph TD;
 ## 🎨 Design Decisions
 ### **1️⃣ Firebase Authentication for Secure Login**
 - **Why?** Firebase provides **secure, scalable, and easy-to-integrate** authentication.
-  
+- **Alternative?** Custom JWT authentication could be used but requires **manual token management**.
+
 ### **2️⃣ AWS S3 for Document Storage**
 - **Why?** AWS S3 supports **large-scale storage, security, and pre-signed URLs** for controlled uploads.
-- **Alternative?** Google Cloud Storage or Firebase Storage.
+- **Alternative?** Google Cloud Storage or Firebase Storage, but **S3 offers more granular access controls**.
 - **User Context:** Documents are stored in AWS S3 under a dedicated folder for each user, ensuring that if a user returns multiple times, their documents remain accessible in their designated folder.
 
 ### **3️⃣ Google Gemini AI for Chat with Documents**
@@ -138,5 +146,24 @@ cd frontend && npm run dev
 
 ---
 
+## 🛡️ Security Considerations
+✅ **Pre-signed URLs** ensure users **can upload files securely** without exposing AWS credentials.  
+✅ **Firebase Authentication** prevents **unauthorized access** to documents.  
+✅ **AWS S3 Object Permissions** ensure each user **can only access their own files**.  
+✅ **Cookies & HTTP-Only Tokens** secure user sessions **without exposing JWTs**.  
 
+---
+
+## 📃 Future Improvements
+🔗 **AI-powered Optical Character Recognition (OCR)** – Extract text from **scanned images**.  
+🌟 **Multi-file Chat Support** – Compare and analyze **multiple reports** at once.  
+🏥 **Doctor Review System** – Allow **doctors to review** AI-generated insights.  
+🛡️ **HIPAA Compliance** – Implement **end-to-end encryption** for medical data safety.  
+
+---
+
+## 📝 License
+This project is **open-source** under the **MIT License**.
+
+🚀 **Happy coding! Let me know if you have any questions! 🔥**
 
