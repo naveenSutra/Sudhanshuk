@@ -39,10 +39,11 @@ graph TD;
 ## 🎨 Design Decisions
 ### **1️⃣ Firebase Authentication for Secure Login**
 - **Why?** Firebase provides **secure, scalable, and easy-to-integrate** authentication.
-
+- 
 ### **2️⃣ AWS S3 for Document Storage**
 - **Why?** AWS S3 supports **large-scale storage, security, and pre-signed URLs** for controlled uploads.
 - **Alternative?** Google Cloud Storage or Firebase Storage.
+- **User Context:** Documents are stored in AWS S3 under a dedicated folder for each user, ensuring that if a user returns multiple times, their documents remain accessible in their designated folder.
 
 ### **3️⃣ Google Gemini AI for Chat with Documents**
 - **Why?** Gemini AI **avoids OpenAI's API limits** and is **optimized for structured document queries**.
@@ -136,3 +137,6 @@ cd frontend && npm run dev
 - Click on a file to **download or view it**.
 
 ---
+
+
+
