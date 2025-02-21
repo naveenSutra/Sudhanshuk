@@ -39,7 +39,6 @@ graph TD;
 ## 🎨 Design Decisions
 ### **1️⃣ Firebase Authentication for Secure Login**
 - **Why?** Firebase provides **secure, scalable, and easy-to-integrate** authentication.
-- **Alternative?** Custom JWT authentication could be used but requires **manual token management**.
 
 ### **2️⃣ AWS S3 for Document Storage**
 - **Why?** AWS S3 supports **large-scale storage, security, and pre-signed URLs** for controlled uploads.
